@@ -1,4 +1,4 @@
-## --- 01 TYPOGRAPHY SYSTEM
+## 01 TYPOGRAPHY SYSTEM
 
 - **Font sizes (px)**
 
@@ -30,7 +30,7 @@
   0.75px
 ```
 
-## --- 02 COLORS
+## 02 COLORS
 
 - **Primary:** `#e67e22`
 
@@ -61,18 +61,18 @@
 #333
 ```
 
-## --- 05 SHADOWS
+## 05 SHADOWS
 
 `0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);`
 
-## --- 06 BORDER-RADIUS
+## 06 BORDER-RADIUS
 
 ```
 Default: 9px
 Medium: 11px
 ```
 
-## --- 07 WHITESPACE
+## 07 WHITESPACE
 
 - **Spacing system (px)**
 
