@@ -1,13 +1,13 @@
 <template>
-  <Header />
+  <SectionHero />
 </template>
 
 <script>
-import Header from './components/Header.vue';
+import SectionHero from './components/SectionHero.vue';
 
 export default {
   name: 'App',
-  components: { Header },
+  components: { SectionHero },
 };
 </script>
 
@@ -25,6 +25,7 @@ html {
 
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
+  /* 10px = 1rem */
   font-size: 62.5%;
   overflow-x: hidden;
 }
