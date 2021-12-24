@@ -42,15 +42,28 @@ export default {
   /* Image container is 100% filled */
   width: 100%;
 }
-
+.section-hero {
+  background-color: #fdf2e9;
+}
 .hero {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 130rem;
+  max-width: 110rem;
   margin: 0 auto;
 }
 
 .heading-primary {
-  font-size: 6.2rem;
+  color: #333;
+  font-size: 5.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  margin: 0 0 3.2rem 0;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 4.8rem 0;
 }
 </style>
