@@ -44,12 +44,14 @@ export default {
 }
 .section-hero {
   background-color: #fdf2e9;
+  padding: 9.6rem 0;
 }
 .hero {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 110rem;
+  gap: 9.6rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -63,7 +65,21 @@ export default {
 }
 .hero-description {
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0 0 4.8rem 0;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #e67e22;
+  border-radius: 0.9rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  margin: 0.5rem;
 }
 </style>
