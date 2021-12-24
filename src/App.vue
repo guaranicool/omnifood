@@ -37,6 +37,6 @@ body {
   color: #555;
 
   /* Only works if there is nothing absolutely positioned in relation to body */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 </style>

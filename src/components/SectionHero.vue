@@ -9,11 +9,25 @@
         <p class="hero-description">
           The smart 365-days-per-year food subscription that will make you eat
           healthy again. Tailored to your personal tastes and nutritional needs.
-          We have delivered 250,000+ meals last year!
+          We have delivered
         </p>
         <!-- add router-link -->
-        <a href="#" class="btn">Start eating well</a>
-        <a href="#" class="btn">Learn more &darr;</a>
+        <a href="#" class="btn btn-full margin-right-sm">Start eating well</a>
+        <a href="#" class="btn btn--outline">Learn more &darr;</a>
+
+        <div class="delivered-meals">
+          <div class="delivered-imgs">
+            <img :src="deliveredImgA" alt="Customer photo" />
+            <img :src="deliveredImgB" alt="Customer photo" />
+            <img :src="deliveredImgC" alt="Customer photo" />
+            <img :src="deliveredImgD" alt="Customer photo" />
+            <img :src="deliveredImgE" alt="Customer photo" />
+            <img :src="deliveredImgF" alt="Customer photo" />
+          </div>
+          <p class="delivered-text">
+            <span>250,000+</span> meals delivered last year!
+          </p>
+        </div>
       </div>
       <!-- image container -->
       <div class="hero-img-box">
@@ -32,6 +46,12 @@ export default {
   data() {
     return {
       imageBox: require('../assets/images/hero.png'),
+      deliveredImgA: require('../assets/images/customers/customer-1.jpg'),
+      deliveredImgB: require('../assets/images/customers/customer-2.jpg'),
+      deliveredImgC: require('../assets/images/customers/customer-3.jpg'),
+      deliveredImgD: require('../assets/images/customers/customer-4.jpg'),
+      deliveredImgE: require('../assets/images/customers/customer-5.jpg'),
+      deliveredImgF: require('../assets/images/customers/customer-6.jpg'),
     };
   },
 };
@@ -76,10 +96,39 @@ export default {
   border: none;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
-  margin: 0.5rem;
+
+  /* Put transition:  on original state; */
+  transition: all 0.3s;
+}
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #333;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* border: 3px solid #fff; */
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-right-sm {
+  margin-right: 1.6rem;
 }
 </style>
