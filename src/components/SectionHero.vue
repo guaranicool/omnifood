@@ -74,6 +74,34 @@ export default {
   max-width: 120rem;
   margin: 0 auto;
 }
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  border: 3px solid #fdf2e9;
+  border-radius: 50%;
+  height: 4.8rem;
+  margin-right: -1.6rem;
+  width: 4.8rem;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
 
 .heading-primary {
   color: #333;
