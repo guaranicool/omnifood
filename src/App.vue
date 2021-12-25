@@ -1,13 +1,19 @@
 <template>
-  <SectionHero />
+  <main>
+    <Header />
+    <SectionHero />
+  </main>
+
+  <router-view />
 </template>
 
 <script>
+import Header from './components/Header.vue';
 import SectionHero from './components/SectionHero.vue';
 
 export default {
   name: 'App',
-  components: { SectionHero },
+  components: { SectionHero, Header },
 };
 </script>
 
