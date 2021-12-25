@@ -2,6 +2,7 @@
   <main>
     <Header />
     <SectionHero />
+    <Featured />
   </main>
 
   <router-view />
@@ -10,10 +11,11 @@
 <script>
 import Header from './components/Header.vue';
 import SectionHero from './components/SectionHero.vue';
+import Featured from './views/Featured.vue';
 
 export default {
   name: 'App',
-  components: { SectionHero, Header },
+  components: { SectionHero, Header, Featured },
 };
 </script>
 

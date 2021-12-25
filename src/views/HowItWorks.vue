@@ -1,0 +1,7 @@
+<template>
+  <section class="section-how">
+    <div class="container"></div>
+  </section>
+</template>
+
+<style></style>
