@@ -1,8 +1,9 @@
 <template>
   <main>
     <Header />
-    <SectionHero />
+    <Hero />
     <Featured />
+    <!-- <How /> -->
   </main>
 
   <router-view />
@@ -10,12 +11,13 @@
 
 <script>
 import Header from './components/Header.vue';
-import SectionHero from './components/SectionHero.vue';
+import Hero from './components/Hero.vue';
 import Featured from './views/Featured.vue';
+// import How from './views/How.vue';
 
 export default {
   name: 'App',
-  components: { SectionHero, Header, Featured },
+  components: { Header, Hero, Featured },
 };
 </script>
 
