@@ -3,7 +3,7 @@
     <Header />
     <Hero />
     <Featured />
-    <!-- <How /> -->
+    <How />
   </main>
 
   <router-view />
@@ -13,11 +13,11 @@
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import Featured from './views/Featured.vue';
-// import How from './views/How.vue';
+import How from './views/How.vue';
 
 export default {
   name: 'App',
-  components: { Header, Hero, Featured },
+  components: { Header, Hero, Featured, How },
 };
 </script>
 
