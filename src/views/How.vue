@@ -15,7 +15,7 @@
 
         <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
 
-        <p class="step-descritption">
+        <p class="step-description">
           Never again waste time thinking about what to eat! Omnifood AI will
           create a 100% personalized weekly meal plan just for you. It makes
           sure you get all the nutrients and vitamins you need, no matter what
@@ -45,7 +45,7 @@
 
         <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
 
-        <p class="step-descritption">
+        <p class="step-description">
           Once per week, approve the meal plan generated for you by Omnifood AI.
           You can change ingredients, swap entire meals, or even add your own
           recipes.
@@ -58,7 +58,7 @@
 
         <h3 class="heading-tertiary">Receive meals at convenient time</h3>
 
-        <p class="step-descritption">
+        <p class="step-description">
           Best chefs in town will cook your selected meal every day, and we will
           deliver it to your door whenever works best for you. You can change
           delivery schedule and address daily!
@@ -90,19 +90,24 @@ export default {
 .section-how {
   padding: 9.6rem 0;
 }
-.container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-.grid--2--cols {
-  grid-template-columns: repeat(2, 1fr);
-}
 .step-img {
-  width: 50%;
+  width: 35%;
+}
+.step-number {
+  color: #333;
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
