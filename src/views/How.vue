@@ -8,11 +8,69 @@
     </div>
 
     <!-- Grid container -->
-    <div class="container">
-      <div class="step-text-box"></div>
+    <div class="container grid grid--2--cols">
+      <!-- STEP 01 -->
+      <div class="step-text-box">
+        <p class="step-number">01</p>
+
+        <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
+
+        <p class="step-descritption">
+          Never again waste time thinking about what to eat! Omnifood AI will
+          create a 100% personalized weekly meal plan just for you. It makes
+          sure you get all the nutrients and vitamins you need, no matter what
+          diet you follow!
+        </p>
+      </div>
 
       <div class="step-img-box">
-        <img :src="setpImgBoxA" alt="" />
+        <img
+          class="step-img"
+          :src="setpImgBoxA"
+          alt="Iphone app preferences selection screem"
+        />
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="step-img-box">
+        <img
+          class="step-img"
+          :src="setpImgBoxB"
+          alt="iPhone app meal approving plan screen"
+        />
+      </div>
+
+      <div class="step-text-box">
+        <p class="step-number">02</p>
+
+        <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+
+        <p class="step-descritption">
+          Once per week, approve the meal plan generated for you by Omnifood AI.
+          You can change ingredients, swap entire meals, or even add your own
+          recipes.
+        </p>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="step-text-box">
+        <p class="step-number">03</p>
+
+        <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+
+        <p class="step-descritption">
+          Best chefs in town will cook your selected meal every day, and we will
+          deliver it to your door whenever works best for you. You can change
+          delivery schedule and address daily!
+        </p>
+      </div>
+
+      <div class="step-img-box">
+        <img
+          class="step-img"
+          :src="setpImgBoxC"
+          alt="iPhone app meal approving plan screen"
+        />
       </div>
     </div>
   </section>
@@ -22,8 +80,29 @@
 export default {
   data: () => ({
     setpImgBoxA: require('../assets/images/app/app-screen-1.png'),
+    setpImgBoxB: require('../assets/images/app/app-screen-2.png'),
+    setpImgBoxC: require('../assets/images/app/app-screen-3.png'),
   }),
 };
 </script>
 
-<style></style>
+<style scoped>
+.section-how {
+  padding: 9.6rem 0;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.step-img {
+  width: 50%;
+}
+</style>
