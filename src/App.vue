@@ -56,7 +56,9 @@ body {
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  align-items: center;
 }
 .grid--2--cols {
   grid-template-columns: repeat(2, 1fr);
